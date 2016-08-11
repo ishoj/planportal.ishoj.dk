@@ -64,7 +64,6 @@
   }
 }
 
-
 // MATCH-HEIGHTS FORSIDE BOKSE
 .bokse-venstre {
   margin-top: 4em;
@@ -177,9 +176,9 @@
       }
     }
   }
+
+
 }
-
-
 
 // DIMMER
 .dimmer-delsiden {
@@ -456,7 +455,6 @@
   }
 }
 
-
 // AKTIVITETS DATA
 .aktivitets-data {
   margin-top: 2.5em;
@@ -726,9 +724,9 @@ $burger-color-line: $color-white;
   width: 100%;
   height: 50vh;
   background-color: $color-frise;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
   min-height: calc-em(170px);
   max-height: calc-em(300px);
 
@@ -755,12 +753,48 @@ $burger-color-line: $color-white;
   @media screen and (min-width: 1600px) { // 1600px
     min-height: calc-em(700px);
   }
+  .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: $color-frise;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: inherit;
+    max-height: inherit;
+    @media screen and (min-width: $bp-medium) { // 640px
+      height: 70vh;
+      min-height: calc-em(220px);
+      max-height: none;
+    }
+    @media screen and (min-width: $bp-medium-2) { // 768px
+      min-height: calc-em(270px);
+    }
+    @media screen and (min-width: $bp-large) { // 960px
+      min-height: calc-em(340px);
+    }
+    @media screen and (min-width: $bp-large-2) { // 1024px
+      min-height: calc-em(400px);
+    }
+    @media screen and (min-width: $bp-xlarge) { // 1280px
+      min-height: calc-em(500px);
+    }
+    @media screen and (min-width: $bp-xlarge-2) { // 1440px
+      min-height: calc-em(600px);
+    }
+    @media screen and (min-width: 1600px) { // 1600px
+      min-height: calc-em(700px);
+    }
 
+  }
   .gradient {
     position: absolute;
+    z-index: 2;
     height: 100%;
     width: 100%;
-
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQxJSIgc3RvcC1jb2xvcj0iIzA3MWQwZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg3JSIgc3RvcC1jb2xvcj0iIzBlM2QyMCIgc3RvcC1vcGFjaXR5PSIwLjkiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
     background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(7,29,15,0) 41%, rgba(14,61,32,0.9) 87%);
     background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(7,29,15,0) 41%,rgba(14,61,32,0.9) 87%);
@@ -776,7 +810,7 @@ $burger-color-line: $color-white;
   }
   .text {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     bottom: 0;
     left: 0;
     width: 100%;
