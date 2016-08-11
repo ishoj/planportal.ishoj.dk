@@ -398,11 +398,11 @@
                   // $output .= '</a>';
 
                   // MENU TIL UNDERSIDER
-                  $output .= "<nav class=\"menu-underside\">";
+                  // $output .= "<nav class=\"menu-underside\">";
                     // til BLOCK MENU SITES
-                    $block = module_invoke('menu_block', 'block_view', '4');
-                    $output .= render($block['content']);
-                  $output .= "</nav>";
+                  //   $block = module_invoke('menu_block', 'block_view', '4');
+                  //   $output .= render($block['content']);
+                  // $output .= "</nav>";
 
                   // BOKSE [HØJRE]
                   $output .= '<div class="row bokse-hoejre">';
@@ -577,11 +577,10 @@
               <?php print render($page['footer_sociale']); ?>
               <h3>Følg os på sociale medier</h3>
               <p>
-                <a class="sprite sprite-facebook footer" href="https://www.facebook.com/ishojnaturcenter" title="Følg Ishøj Naturcenter på Facebook"><span><span class="screen-reader">Følg Ishøj Naturcenter på Facebook</span></span></a>
-                <!-- <a class="sprite sprite-facebook footer" href="http://www.facebook.com/ishojkommune" title="Følg Ishøj Kommune på Facebook"><span><span class="screen-reader">Følg Ishøj Kommune på Facebook</span></span></a>
+                <a class="sprite sprite-facebook footer" href="http://www.facebook.com/ishojkommune" title="Følg Ishøj Kommune på Facebook"><span><span class="screen-reader">Følg Ishøj Kommune på Facebook</span></span></a>
                 <a class="sprite sprite-linkedin footer" href="https://www.linkedin.com/company/ishoj-kommune" title="Følg Ishøj Kommune på LinkedIn"><span><span class="screen-reader">Følg Ishøj Kommune på LinkedIn</span></span></a>
                 <a class="sprite sprite-twitter footer" href="http://www.twitter.com/ishojkommune" title="Følg Ishøj Kommune på Twitter"><span><span class="screen-reader">Følg Ishøj Kommune på Twitter</span></span></a>
-                <a class="sprite sprite-youtube footer" href="http://www.youtube.com/tvishoj" title="Følg Ishøj Kommune på Youtube"><span><span class="screen-reader">Følg Ishøj Kommune på Youtube</span></span></a> -->
+                <a class="sprite sprite-youtube footer" href="http://www.youtube.com/tvishoj" title="Følg Ishøj Kommune på Youtube"><span><span class="screen-reader">Følg Ishøj Kommune på Youtube</span></span></a>
               </p>
             </div>
             <div class="grid-third">
