@@ -281,28 +281,14 @@ $output .= "<section id=\"node-" . $node->nid . "\" class=\"" . $classes . " art
         //  S P E C I F I K K E   N O D E R  //
         // --------------------------------- //
 
-        if($node->nid == 1634) {
-          $output .= views_embed_view('ture_ish_j_naturcenter_1_klasse_3_klasse','default');
+        // NODEN "Lokalplaner" - node-id: 1811
+        if($node->nid == 1811) {
+          $output .= views_embed_view('lokalplaner_vedtaget','display_vedtaget');
         }
-        if($node->nid == 1635) {
-          $output .= views_embed_view('ture_ish_j_naturcenter_4_klasse_6_klasse','default');
-        }
-        if($node->nid == 1636) {
-          $output .= views_embed_view('ture_ish_j_naturcenter_7_klasse_10_klasse','default');
-        }
-        if($node->nid == 1638) {
-          $output .= views_embed_view('ture_ish_j_naturcenter_b_rnehaveklasser','default');
-        }
-        if($node->nid == 1639) {
-          $output .= views_embed_view('ture_ish_j_naturcenter_daginstitutioner','default');
-        }
-        if($node->nid == 1640) {
-          $output .= views_embed_view('ture_ish_j_naturcenter_sfoer','default');
-        }
-        // Offentlig ture
-        if($node->nid == 1629) {
-          $output .= json_aktivitetsliste('3121'); // Arrangør: Ishøj Naturcenter = tid 3121
-        }
+        // Aktiviteter
+        // if($node->nid == 1629) {
+        //   $output .= json_aktivitetsliste('3121'); // Arrangør: Ishøj Naturcenter = tid 3121
+        // }
 
 
         // ----------- //
