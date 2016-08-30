@@ -283,7 +283,12 @@ $output .= "<section id=\"node-" . $node->nid . "\" class=\"" . $classes . " art
 
         // NODEN "Lokalplaner" - node-id: 1811
         if($node->nid == 1811) {
-          $output .= views_embed_view('lokalplaner_vedtaget','display_vedtaget');
+          // $output .= views_embed_view('lokalplaner_vedtaget','display_vedtaget');
+          // Følgende gør, at resultatet af exposed filter ikke går til / (forsiden) men til url'en for den aktuelle node
+          $view = views_get_view('lokalplaner_vedtaget','display_vedtaget');
+          $view->override_path = $_GET['q'];
+          $viewsoutput = $view->preview();
+          $output .= $viewsoutput;
         }
         // Aktiviteter
         // if($node->nid == 1629) {
